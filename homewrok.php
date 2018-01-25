@@ -1,6 +1,8 @@
 <?php
 function fib($n){
-    var_dump(func_get_args());
+    static $step = 0;
+    $step ++;
+    var_dump($step);
     if ($n < 3){
         return 1;
     }
@@ -11,6 +13,6 @@ function fib($n){
 for ($n = 0; $n <= 15; $n ++){
     echo (fib($n) . ',');
 }
-echo ('...\n')
+echo fib($n);
 ?>
 
