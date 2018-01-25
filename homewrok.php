@@ -1,8 +1,5 @@
 <?php
 function fib($n){
-    static $step = 0;
-    $step ++;
-    var_dump($step);
     if ($n < 3){
         return 1;
     }
