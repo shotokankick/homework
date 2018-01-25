@@ -1,5 +1,6 @@
 <?php
-function fib($num){
+function fib($num)
+{
     if (in_array($num, 1, 2)) {
         return 1;
     }
