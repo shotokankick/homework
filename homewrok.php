@@ -1,11 +1,12 @@
 <?php
-function fib($n){
-    if (in_array($n, 1, 2)) {
+function fib($num){
+    if (in_array($num, 1, 2)) {
         return 1;
     }
     else {
-        return fib($n-1) + fib($n -2);
+        return fib($num-1) + fib($num -2);
     }
 }
 echo (fib(5) . ',');
 ?>
+
